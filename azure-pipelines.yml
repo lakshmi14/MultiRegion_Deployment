@@ -1,4 +1,15 @@
 # Starter pipeline
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Free Trial(8d604e6b-f377-45f6-bf8f-7fc3b57d39c0)'
+    subscriptionId: '8d604e6b-f377-45f6-bf8f-7fc3b57d39c0'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'Sample1'
+    location: 'Central US'
+    templateLocation: 'Linked artifact'
+    csmFile: 'https://github.com/Ameenbasha/MultiRegion_Deployment/blob/master/Azure_DevopsMRD'
+    deploymentMode: 'Incremental'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
