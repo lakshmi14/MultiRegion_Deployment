@@ -4,14 +4,14 @@
   "parameters": {
     "uniqueDnsName": {
       "type": "string",
-      "defaultValue": "MultiregionDeploy2",
+      "defaultValue": "MultiregionD",
       "metadata": {
         "description": "Relative DNS name for the traffic manager profile, resulting FQDN will be <uniqueDnsName>.trafficmanager.net, must be globally unique."
       }
     },
     "uniqueDnsNameForWebApp": {
       "type": "string",
-      "defaultValue": "Sydneywebpage",
+      "defaultValue": "Sydneyweb",
       "metadata": {
         "description": "Relative DNS name for the WebApps, must be globally unique.  An index will be appended for each Web App."
       }
